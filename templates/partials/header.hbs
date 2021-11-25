@@ -1,0 +1,94 @@
+<header>
+        <div class="container">
+           <a href="/EaseYourStudy"> <img class="logo" src="/img/Capture.PNG" alt="image" width="300px" height="60px" style="margin-top: 10px;" srcset=""></a>
+        </div>
+
+        <div class="container">
+           
+            <nav class="flex item-center justify-between">
+                <div class="left flex items-center">
+                    <div class="dropdown">
+                        <button class="btn-1 dept" onclick="window.open('/EaseYourStudy', '_self').focus();" >Department</button>
+                        <div class="dropdown-content">
+                            <a href="#" id="0" onclick="func(this.id)">Computer Science</a>
+                            <a href="#" id="1" onclick="func(this.id)">Electronics</a>
+                            <a href="#" id="2" onclick="func(this.id)">Mechanical</a>
+                            <a href="#" id="3" onclick="func(this.id)">Bio Technology</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                    <button class="btn-1 lang">Language</button>
+                        <div class="dropdown-content">
+                            <a href="#" id="english" onclick="langFunc(this.id)">English</a>
+                            <a href="#" id="hindi" onclick="langFunc(this.id)">Hindi</a>
+                            <a href="#" id="any" onclick="langFunc(this.id)">Any</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn-1 rev" onclick="window.open('/EaseYourStudy/reviews', '_self').focus();" >Reviews</button>
+                    </div>
+                    <div class="dropdown">
+                    <button class="btn-1 abt" onclick="window.open('/EaseYourStudy/About_us', '_self').focus();">About Us</button>
+                    </div>
+                    <div class="dropdown">
+                    <button class="btn-1 contact" onclick="window.location.href='#contact-us';">Contact Us</a></button>
+                    </div>
+                
+                <div class="dropdown">
+                        <button class="btn-1 icon">
+                            <a href="javascript:void(0);"onclick="openLeftNav()">
+                            <i class="fa fa-bars"></i>                            
+                            </a>
+                        </button>                     
+                </div>    
+                </div>
+
+                <div id="leftSidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeLeftNav()">&times;</a>
+                    <a id="dep" href="/EaseYourStudy" >Department</a>
+                    <div class="row" style="display: none;">
+                            <a href="#" id="0" onclick="func(this.id)">Computer Science</a>
+                            <a href="#" id="1" onclick="func(this.id)">Electronics</a>
+                            <a href="#" id="2" onclick="func(this.id)">Mechanical</a>
+                            <a href="#" id="3" onclick="func(this.id)">Bio Technology</a>
+                            <a href="#" id="english" onclick="langFunc(this.id)">English</a>
+                            <a href="#" id="hindi" onclick="langFunc(this.id)">Hindi</a>
+                            <a href="#" id="any" onclick="langFunc(this.id)">Any Lang</a>
+                    </div>
+                    
+                    <a href="/EaseYourStudy/reviews">Your reviews</a>
+                    <a href="/EaseYourStudy/about_us">About Us</a>
+                    
+                </div>
+                
+
+
+                
+                
+                
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <h4 id="user_name">Welcome {{name}}!</h4>
+                    <a href="/EaseYourStudy/profile">Your Profile</a>
+                    <a href="/EaseYourStudy/reviews">Your reviews</a>
+                    <a href="#contact-us">Contact Us</a>
+                    <a href="/logout">Logout</a>
+                    <div class="flex" >
+                        <a href="https://twitter.com/Ease_your_study" target="_blank"><img src="https://img.icons8.com/ios/30/000000/twitter--v1.png"></a>
+                        <a href="http://www.instagram.com/ease_your_study/" target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png"></a>
+                        <a href="https://www.linkedin.com/in/ease-your-study-website-62094b225/" target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png"></a>    
+                    </div>
+                </div>
+                
+                
+                <div class="right">
+                    <div style="font-size:30px;cursor:pointer; transform: translateY(50%);" onclick="openNav() "><img src="https://img.icons8.com/ios/50/000000/user-menu-male.png"/></div>
+                    
+                </div>
+                
+                
+                
+
+            </nav>
+        </div>
+    </header>

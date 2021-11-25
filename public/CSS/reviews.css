@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+h2{
+    text-align: center;
+    color: rgba(2, 2, 49, 0.726);
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     margin-top: 1%; 
+}
+.review-form p{
+    text-align: center;
+    font-size: 18px;
+    color: #3f37c9;;
+}
+select{
+    font-size: 20px;
+}
+.dept-name{
+    
+    font-size: 16px;
+    text-align: center;
+}
+input{
+    width:50%;
+    height:50px;
+    margin-left: 26%;
+    float:left;
+    font-size: 20px;
+}
+#submit{
+    width:90px;
+    height:50px;
+    font-size: 20px;
+    color:black;
+    background-color: transparent;
+    transition: 0.5s smooth;
+}
+
+.items-list{
+    visibility: hidden;
+}
+.show-container{
+    visibility: visible;
+}
+.review-item{
+    width:40%;
+    height:50px;
+    border: 1px solid grey;
+    margin-left: 30.5%;
+    margin-top: 40px;
+}
+.title{
+    float:left;
+    margin-left: 15px;
+}
+.btn-container{
+    margin-top: 7px;
+    float:right;
+    margin-right:7px;
+}
+.edit-btn{
+    margin-right:10px;
+}
+.submit1{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left:50%;
+    transform: translateX(-50%);
+    color: black ;
+    background-color: transparent;
+    padding: 20px;
+}
+.text1{
+    width:25%;
+}

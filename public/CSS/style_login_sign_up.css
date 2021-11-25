@@ -1,0 +1,125 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #FFFFFF;
+}
+.container3{
+    
+    
+    /* margin-left:600px;*/
+    
+    border:3px groove #3f37c9;
+    border-radius: 5px;
+    border-style: groove;
+}
+h3{
+    text-align: center;
+    color: rgb(233, 39, 104);
+    font-size: 20px;
+    
+}
+h4{
+    margin: 0;
+    text-align: center;
+    margin-top: 10px;
+}
+.container1{
+    width:400px;
+    height:485px;
+    /* margin-left:600px; */
+    
+    border:3px groove #3f37c9;
+    border-radius: 5px;
+    border-style: groove;
+}
+.show-container{
+    visibility: visible;
+}
+h2{
+    text-align: center;
+    font-size: 35px;
+    color: #3f37c9;
+}
+input{
+    width:300px;
+    height: 40px;
+    align-content: center;
+    margin-left:48px;
+    margin-bottom: 20px;
+    border: 1px groove black;
+    border-radius: 4px;
+    font-size:17px;
+}
+.forgot{
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 24px; 
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+.mail{
+    visibility: hidden;
+}
+.btn1{
+    height:50px;
+}
+.btn{
+     margin:0;
+    background-color:#3f37c9;
+    margin-left:73px;
+    width:250px;
+    height:33px; 
+    color: white;
+    border: 2px solid rgba(0, 0, 0, 0.712);
+    font-size: 17px;
+    text-decoration: none;
+     padding-top: 3px; 
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+a:hover{
+    background-color: white;
+    color: #3f37c9;
+    font-weight: bold;
+    border: 1px solid black;
+}
+span{
+    font-size: 23px;
+    text-align: center;
+}
+.forgot:hover{
+    border: none;
+    color: #3f37c9;
+    font-size: 15px;
+}
+
+#modal {
+  position:fixed;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
+  width:400px;
+    height:auto;
+  
+  background-color:#fff;
+}
+
+#overlay {
+  position:fixed;
+  left:0;
+  top:0;
+  width:100vw;
+  height:100vh;
+  display:none;
+  background-color:#000;
+  opacity:0.5;
+}
+
+#failed_login{
+    background-color: rgb(18, 196, 77);
+    color: crimson;
+}

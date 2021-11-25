@@ -1,0 +1,53 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="shortcut icon" href="/img/favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Varela+Round&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+   
+    <title>ABOUT US</title>
+    </head>
+    <body>
+        {{>header}}
+        <section>
+        <div class="about-text" style="margin-bottom: 10%;">
+            <p style="font-size: 22px; color: black; text-align: justify; margin:0 6%; margin-top:30px;">Ease your study is a website that helps students to learn from the best. It helps students for last minute preparation for their examination from the best tutors. The best tutors are recognised by student feedback and views.
+                The main factor is it help students to learn without any distraction as the whole website has all educational videos subject wise and no other additional content. The website is completely user-friendly.</p>
+                <br><br><p style="font-size: 22px; color: black; text-align: justify; margin:0 6%;">Ease your study gives students a good experience to learn from highly rated and popular videos.
+                    It encourages students to be self-motivated and avoid distraction while watching videos.
+                    It provides each student a unique platform to explore the content of the website.
+                    Students can put up their suggestions and can give channel's name that is not available in our website and that they find helpful.
+
+                    </p>
+            </div>
+       </section>
+        
+       {{>footer}}
+        
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script>
+    $(window).on('resize',function(){location.reload();});
+    if($(window).height() > $("body").height()){
+        $("footer").css("position", "static");
+        $("footer").css("width", "100%");
+        $("footer").css("bottom", "0");
+    
+      } else {
+        $("footer").css("position", "relative");
+        
+      }
+      $(".dropdown-content").css("display","none");
+      $(".lang").css("display","none");
+     
+
+      </script>
+      <script src="/js/script.js"></script>
+    
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EASE YOUR STUDY | Become an expert</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="shortcut icon" href="/img/favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Varela+Round&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    
+
+</head>
+<body>
+    {{>header}}
+    <section class="search">
+        
+            <form action="" class="myform">
+                <input type="text" name="search" id="search" onkeydown = "if (event.keyCode == 13) return searchKey()"/>
+            </form>
+        
+    </section><section class="topics" >
+         
+        <div class="container justify-between">
+            <h1>Topics</h1>
+            <div class="wrapp">
+                
+                <div class="display-topic justify-between">                    
+                
+                    <div id="CSE">
+                        <ul>Computer Science</ul>
+                        <li><a href="#ds" id="0" onclick="funSub(this.id)">Data Structures</a></li>
+                        <li><a href="#dm" id="1" onclick="funSub(this.id)">Database Mangement</a></li>
+                        <li><a href="#nc"id="2" onclick="funSub(this.id)">Networks and Communication</a></li>
+                        <li><a href="#os"id="3" onclick="funSub(this.id)">Operating Systems</a></li>
+                        <li><a href="#soft" id="4"onclick="funSub(this.id)">Software</a></li>
+                        <li><a href="#wd"id="5"onclick="funSub(this.id)">Web Depevolpment</a></li>
+                        
+                    </div>
+                    <div id="ECE">
+                        <ul>Electronics</ul>
+                        <li><a href="#dl" id="6" onclick="funSub(this.id)">Digital Logic and Circuit</a></li>
+                        <li><a href="#ae" id="7" onclick="funSub(this.id)">Analog Electronics</a></li>
+                        <li><a href="#ss" id="8" onclick="funSub(this.id)">Signal & System</a></li>
+                        <li><a href="#et" id="9" onclick="funSub(this.id)">Electromagnetic Theory</a></li>
+                        <li><a href="#ad" id="10" onclick="funSub(this.id)">Analog and Digital Communications</a></li>
+                        <li><a href="#ie" id="11" onclick="funSub(this.id)">Integrated Electronics</a></li>
+                        
+                    </div>
+                    <div id="MECH">
+                        <ul>Mechanical</ul>
+                        <li><a href="#md" id="12" onclick="funSub(this.id)">Mechanical drawing</a></li>
+                        <li><a href="#bd" id="13" onclick="funSub(this.id)">Basic Thermodynamics </a></li>
+                        <li><a href="#mssm"id="14" onclick="funSub(this.id)">Mechanics of Solids or Solid Mechanics</a></li>
+                        <li><a href="#emt"id="15" onclick="funSub(this.id)">Electromagnetic Theory</a></li>
+                        <li><a href="#ht"id="16" onclick="funSub(this.id)">Heat Transfer</a></li>
+                        <li><a href="#fm"id="17" onclick="funSub(this.id)">Fluid Mechanics</a></li>
+                        
+                    </div>
+
+                    
+
+                    <div id="BIO">
+                        <ul>Bio - Technology</ul>
+                        <li><a href="#hb" id="18" onclick="funSub(this.id)">Human Biology</a></li>
+                        <li><a href="#cbbs" id="19" onclick="funSub(this.id)">Cell Biology and Biological Systems</a></li>
+                        <li><a href="#sb" id="20" onclick="funSub(this.id)">Structural Biochemistry</a></li>
+                        <li><a href="#bc" id="21" onclick="funSub(this.id)">Biological Chemistry</a></li>
+                        <li><a href="#m" id="22" onclick="funSub(this.id)">Microbiology</a></li>
+                        <li><a href="#ps" id="23" onclick="funSub(this.id)">Plant Science</a></li>
+                
+                    </div>
+                </div>
+                
+                <div class="youtube-video" width="100%" height="500">
+                    <iframe class="iframe"  width="70%" height="400" src="https://www.youtube.com/embed/IQYffit0mMk" frameborder="0" allowfullscreen></iframe>
+                </div>   
+            </div>       
+        </div>          
+    </section>
+
+      <section class="content">
+        
+
+        
+        <div class="container">
+            <div id="ds" style="display:none">
+                <h1 style="padding: 10px; margin: 10px;">Data Structures</h1>
+                <div class="grid-container">
+                    <div class="grid-item hin easy"><a href="/EaseYourStudy/video_page" onclick="vedio(0,0);"><img src="/img/icons/data_st.png"  alt=""></a><button class="easy">Easy</button><button class="hin">Hindi</button><h6> Gate smasher</h6></div>  
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(0,1);"><img src="/img/icons/data_st.png" alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6> Jenny's lectures</h6></div>
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(0,2);"><img src="/img/icons/data_st.png" alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6> Abdul Bari</h6></div>
+                    <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(0,3);"><img src="/img/icons/data_st.png" alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6> Neso Academy </h6></div>
+                    <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(0,4);"><img src="/img/icons/data_st.png" alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6> Apna college</h6></div> 
+                </div>                 
+            </div>
+            <div id="dm" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Database Management</h1>
+                <div class="grid-container">
+                    <div class="grid-item hin easy"><a href="/EaseYourStudy/video_page" onclick="vedio(1,0);"><img src="/img/icons/database_icon.png"  alt=""></a><button class="easy">Easy</button><button class="hin">Hindi</button><h6> Gate Smashers </h6></div>  
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(1,1);"><img src="/img/icons/database_icon.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6> Jenny's Lecture </h6></div>
+                    <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(1,2);"><img src="/img/icons/database_icon.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6> Knowledge Gate </h6></div>
+                    <div class="grid-item eng easy"> <a href="/EaseYourStudy/video_page" onclick="vedio(1,3);"><img src="/img/icons/database_icon.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6> Neso Academy </h6></div>
+                    <div class="grid-item eng medium"> <a href="/EaseYourStudy/video_page" onclick="vedio(1,4);"><img src="/img/icons/database_icon.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6>  Education 4U </h6></div> 
+               </div>  
+            </div>
+            <div id="nc" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Networks and communication</h1>
+                <div class="grid-container">
+                    <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(2,0);"><img src="/img/icons/internet_networks_icon.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6> IIT Karagpur </h6></div>  
+                    <div class="grid-item hin easy"><a href="/EaseYourStudy/video_page" onclick="vedio(2,1);"><img src="/img/icons/internet_networks_icon.png"  alt=""></a><button class="easy">Easy</button><button class="hin">Hindi</button><h6> Gate Smashers </h6></div>
+                    <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(2,2);"><img src="/img/icons/internet_networks_icon.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6> Education 4U </h6></div>
+                    <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(2,3);"><img src="/img/icons/internet_networks_icon.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6> Neso Academy </h6></div>
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(2,4);"><img src="/img/icons/internet_networks_icon.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6> MIT OCW</h6></div> 
+               </div>  
+            </div>
+            <div id="os" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Operating system</h1>
+                <div class="grid-container">
+                    <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(3,0);"><img src="/img/icons/os_icon.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6> Gate Smashers </h6></div>
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(3,1);"><img src="/img/icons/os_icon.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6> Jenny's Lecture </h6></div>  
+                    <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(3,2);"><img src="/img/icons/os_icon.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6> Education 4u </h6></div>
+                    <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(3,3);"><img src="/img/icons/os_icon.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6>Neso Academy </h6></div>
+                    <div class="grid-item hin hard"><a href="/EaseYourStudy/video_page" onclick="vedio(3,4);"><img src="/img/icons/os_icon.png"  alt=""></a><button class="hard">Hard</button><button class="hin">Hindi</button><h6> Knowledge Gate </h6></div> 
+               </div>  
+            </div>
+           
+            <div id="soft" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Software</h1>
+                <div class="grid-container">
+                    <div class="grid-item hin easy"><a href="/EaseYourStudy/video_page" onclick="vedio(4,0);"><img src="/img/icons/soft_icon.png"  alt=""></a><button class="easy">Easy</button><button class="hin">Hindi</button><h6> Gate Smashers </h6></div>  
+                    <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(4,1);"><img src="/img/icons/soft_icon.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6> Last moment tutions </h6></div>
+                    <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(4,2);"><img src="/img/icons/soft_icon.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6> Education 4u </h6></div>
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(4,3);"><img src="/img/icons/soft_icon.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6> freecodecamp.org </h6></div>
+                    <div class="grid-item hin easy"><a href="/EaseYourStudy/video_page" onclick="vedio(4,4);"><img src="/img/icons/soft_icon.png"  alt=""></a><button class="easy">Easy</button><button class="hin">Hindi</button><h6> Easy Engineering Classes </h6></div> 
+               </div>  
+            </div>
+            <div id="wd" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Web Development</h1>
+                <div class="grid-container">
+                    <div class="grid-item hin easy"><a href="/EaseYourStudy/video_page" onclick="vedio(5,0);"><img src="/img/icons/web_icon.png"  alt=""></a><button class="easy">Easy</button><button class="hin">Hindi</button><h6> Apna college </h6></div>  
+                    <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(5,1);"><img src="/img/icons/web_icon.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6> Programming with Mosh</h6></div>
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(5,2);"><img src="/img/icons/web_icon.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6> freecodecamp.org </h6></div>
+                    <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(5,3);"><img src="/img/icons/web_icon.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6> The Net Ninja </h6></div>
+                    <div class="grid-item hin hard"><a href="/EaseYourStudy/video_page" onclick="vedio(5,4);"><img src="/img/icons/web_icon.png"  alt=""></a><button class="hard">Hard</button><button class="hin">Hindi</button><h6> Code with Harry </h6></div> 
+               </div>  
+            </div>           
+            
+          
+
+            <div id="dl" style="display:none">
+                <h1 style="padding: 10px; margin: 10px;">Digital Logic and Circuit</h1>
+                <div class="grid-container">
+                     <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(6,0);"><img src="/img/icons/electronic_icon.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6> Tutorialspoint </h6></div>  
+                     <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(6,1);"><img src="/img/icons/electronic_icon.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6>Neso Academy </h6></div>
+                     <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(6,2);"><img src="/img/icons/electronic_icon.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6>Knowledge Gate </h6></div>
+                     <div class="grid-item hin hard"><a href="/EaseYourStudy/video_page" onclick="vedio(6,3);"><img src="/img/icons/electronic_icon.png"  alt=""></a><button class="hard">Hard</button><button class="hin">Hindi</button><h6>Gate Smashers </h6></div>
+                     <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(6,4);"><img src="/img/icons/electronic_icon.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6>Baquer mazhari </h6></div> 
+                </div>                 
+            </div>
+
+            <div id="ae" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Analog Electronics</h1>
+                <div class="grid-container">
+                    <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(7,0);"><img src="/img/icons/ana_icon.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6> Neso Academy </h6></div>  
+                    <div class="grid-item hin easy"><a href="/EaseYourStudy/video_page" onclick="vedio(7,1);"><img src="/img/icons/ana_icon.png"  alt=""></a><button class="easy">Easy</button><button class="hin">Hindi</button><h6> Gate Academy PLUS </h6></div>
+                    <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(7,2);"><img src="/img/icons/ana_icon.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6> Baquer mazhari </h6></div>
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(7,3);"><img src="/img/icons/ana_icon.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6>IIT Karagpur </h6></div>
+                    <div class="grid-item hin easy"><a href="/EaseYourStudy/video_page" onclick="vedio(7,4);"><img src="/img/icons/ana_icon.png"  alt=""></a><button class="easy">Easy</button><button class="hin">Hindi</button><h6> Kreatryx GATE - EE, ECE, IN </h6></div> 
+               </div>  
+            </div>
+            <div id="ss" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Signal & System</h1>
+                <div class="grid-container">
+                    <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(8,0);"><img src="/img/icons/signal.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6> Neso Academy </h6></div>  
+                    <div class="grid-item hin hard"><a href="/EaseYourStudy/video_page" onclick="vedio(8,1);"><img src="/img/icons/signal.png"  alt=""></a><button class="hard">Hard</button><button class="hin">Hindi</button><h6> Gate Academy PLUS </h6></div>
+                    <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(8,2);"><img src="/img/icons/signal.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6> Tutorialspoint </h6></div>
+                    <div class="grid-item hin hard"><a href="/EaseYourStudy/video_page" onclick="vedio(8,3);"><img src="/img/icons/signal.png"  alt=""></a><button class="hard">Hard</button><button class="hin">Hindi</button><h6> Kreatryx GATE - EE, ECE, IN </h6></div> 
+               </div>  
+            </div>
+            <div id="et" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Electromagnetic Theory</h1>
+                
+                <div class="grid-container">
+                    <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(9,0);"><img src="/img/icons/electro.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6> Engineering Funda </h6></div>  
+                    <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(9,1);"><img src="/img/icons/electro.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6> Gate Academy GLOBAL</h6></div>
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(9,2);"><img src="/img/icons/electro.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6> Lectures in Electrical Engineering </h6></div>
+                    <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(9,3);"><img src="/img/icons/electro.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6> Gate Academy </h6></div>
+                    <div class="grid-item hin hard"><a href="/EaseYourStudy/video_page" onclick="vedio(9,4);"><img src="/img/icons/electro.png"  alt=""></a><button class="hard">Hard</button><button class="hin">Hindi</button><h6> Kreatryx GATE - EE, ECE, IN </h6></div> 
+               </div>  
+            </div>
+           
+            <div id="ad" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Analog and Digital Communications</h1>
+                <div class="grid-container">
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(10,0);"><img src="/img/icons/dig.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6> Neso Academy </h6></div>
+                    <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(10,1);"><img src="/img/icons/dig.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6> ALL ABOUT ELECTRONICS </h6></div> 
+                    <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(10,2);"><img src="/img/icons/dig.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6> Engineering made Easy </h6></div>
+               </div>  
+            </div>
+            <div id="ie" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Integrated Electronics</h1>
+                <div class="grid-container">
+                    <div class="grid-item hin easy"><a href="/EaseYourStudy/video_page" onclick="vedio(11,0);"><img src="/img/icons/ic.png"  alt=""></a><button class="easy">Easy</button><button class="hin">Hindi</button><h6> Vaibav Jain</h6></div>  
+                    <div class="grid-item hin hard"><a href="/EaseYourStudy/video_page" onclick="vedio(11,1);"><img src="/img/icons/ic.png"  alt=""></a><button class="hard">Hard</button><button class="hin">Hindi</button><h6> Electronics for You</h6></div>
+                    <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(11,2);"><img src="/img/icons/ic.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6> Neso Academy</h6></div>
+                    <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(11,3);"><img src="/img/icons/ic.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6>ALL ABOUT ELECTRONICS</h6></div> 
+               </div>  
+            </div>           
+            
+
+
+            <div id="md" style="display:none">
+                <h1 style="padding: 10px; margin: 10px;">Mechanical drawing</h1>
+                <div class="grid-container">
+                    <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(12,0);"><img src="/img/icons/mechd.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6>Mech Tutorial Hub</h6></div>  
+                    <!-- <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(11,0);"><img src="img/mechd.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6></h6></div>
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(11,0);"><img src="img/mechd.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6></h6></div> -->
+                    <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(12,1);"><img src="/img/icons/mechd.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6>Engineer's Adhar</h6></div>
+                    <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(12,2);"><img src="/img/icons/mechd.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6>MKS Tutorial</h6></div> 
+                </div>                 
+            </div>
+            <div id="bd" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Basic Thermodynamics</h1>
+                <div class="grid-container">
+                    <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(13,0);"><img src="/img/icons/thermo.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6>IIT Kharagpur</h6></div>  
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(13,1);"><img src="/img/icons/thermo.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6>Khan Academy</h6></div>
+                    <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(13,2);"><img src="/img/icons/thermo.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6>Gate Academy Plus</h6></div>
+                    <!-- <div class="grid-item hin easy"><a href="/EaseYourStudy/video_page" onclick="vedio(11,0);"><img src="img/thermo.png"  alt=""></a><button class="easy">Easy</button><button class="hin">Hindi</button><h6></h6></div> -->
+                    <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(13,3);"><img src="/img/icons/thermo.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6>Engineering Funda</h6></div> 
+               </div>  
+            </div>
+            <div id="mssm" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Mechanics of Solids or Solid Mechanics</h1>
+                <div class="grid-container">
+                    <!-- <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(11,0);"><img src="img/solid.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6>IIT Kharagpur</h6></div>   -->
+                    <div class="grid-item hin easy"><a href="/EaseYourStudy/video_page" onclick="vedio(14,0);"><img src="/img/icons/solid.png"  alt=""></a><button class="easy">Easy</button><button class="hin">Hindi</button><h6>Gate Academy Plus</h6></div>
+                    <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(14,1);"><img src="/img/icons/solid.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6>Manas Patnaik</h6></div>
+                    <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(14,2);"><img src="/img/icons/solid.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6>IIT Delhi</h6></div>
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(14,3);"><img src="/img/icons/solid.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6>Tarun Kant</h6></div> 
+               </div>  
+            </div>
+            <div id="em" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Engineering Mechanics</h1>
+                <div class="grid-container">
+                    <!-- <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(11,0);"><img src="img/mechh.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6>IIT Kharagpur</h6></div>   -->
+                    <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(15,0);"><img src="/img/icons/mechh.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6>Gate Academy Plus</h6></div>
+                    <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(15,1);"><img src="/img/icons/mechh.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6>Unacademy Gate</h6></div>
+                    <div class="grid-item hin easy"><a href="/EaseYourStudy/video_page" onclick="vedio(15,2);"><img src="/img/icons/mechh.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6>Mechanical Engineering</h6></div>
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(15,3);"><img src="/img/icons/mechh.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6>NPTEL-NOC ITTM</h6></div> 
+               </div>  
+            </div>
+           
+            <div id="emt" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Electromagnetic Theory</h1>
+                <div class="grid-container">
+                    <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(16,0);"><img src="/img/icons/eleee.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6>Engineering Funda</h6></div>
+                    <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(16,1);"><img src="/img/icons/eleee.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6>Sayantan Sil</h6></div>
+                    <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(16,2);"><img src="/img/icons/eleee.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6>Engineer Tree</h6></div>
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(16,3);"><img src="/img/icons/eleee.png"  alt=""></a><button class="hard">Hard</button<button class="eng">English</button><h6>Gate Academy Global</h6></div> 
+                    <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(16,4);"><img src="/img/icons/eleee.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6>Electrical Engineering</h6></div> 
+                </div>  
+            </div>
+            <div id="ht" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Heat Transfer</h1>
+                <div class="grid-container">
+                    <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(17,0);"><img src="/img/icons/heat.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6>IIT Kharagpur</h6></div>  
+                    <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(17,1);"><img src="/img/icons/heat.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6>Gate Academy</h6></div>
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(17,2);"><img src="/img/icons/heat.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6>IITB</h6></div>
+                    <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(17,3);"><img src="/img/icons/heat.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6>Let's crack Gate</h6></div>
+                    <!-- <div class="grid-item hin hard"><a href="/EaseYourStudy/video_page" onclick="vedio(11,0);"><img src="img/heat.png"  alt=""></a><button class="hard">Hard</button><button class="hin">Hindi</button><h6></h6></div>  -->
+               </div>  
+            </div>           
+            
+            <div id="fm" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Fluid Mechanics</h1>
+                <div class="grid-container">
+                    <div class="grid-item hin easy"><a href="/EaseYourStudy/video_page" onclick="vedio(18,0);"><img src="/img/icons/fluid.png" alt=""></a><button class="easy">Easy</button><button class="hin">Hindi</button><h6>Gear Institute</h6></div>
+                    <!-- <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(11,0);"><img src="img/fluid.png" alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6></h6></div> -->
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(18,1);"><img src="/img/icons/fluid.png" alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6>NPTEL HRD</h6></div>
+                    <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(18,2);"><img src="/img/icons/fluid.png" alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6>Gate Academy Plus</h6></div> 
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(18,3);"><img src="/img/icons/fluid.png" alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6>IIT Kharagpur</h6></div>  
+                </div>  
+            </div>
+
+
+
+            <div id="hb" style="display:none">
+                <h1 style="padding: 10px; margin: 10px;">Human Biology</h1>
+                <div class="grid-container">
+                    <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(19,0);"><img src="/img/icons/hbio.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6>Shomu's Biology</h6></div>  
+                    <!-- <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(11,0);"><img src="img/hbio.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6></h6></div>
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(11,0);"><img src="img/hbio.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6></h6></div> -->
+                    <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(19,1);"><img src="/img/icons/hbio.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6>Khan Sir</h6></div>
+                    <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(19,2);"><img src="/img/icons/hbio.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6></h6>Neeraj</div> 
+                </div>                 
+            </div>
+            <div id="cbbs" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Cell Biology and Biological Systems</h1>
+                <div class="grid-container">
+                    <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(20,0);"><img src="/img/icons/cell.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6>Shomu's Biology</h6></div>  
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(20,1);"><img src="/img/icons/cell.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6>Ninja Nerd</h6></div>
+                    <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(20,2);"><img src="/img/icons/cell.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6>Nanhe Lal Gupta</h6></div>
+                    <!-- <div class="grid-item hin easy"><a href="/EaseYourStudy/video_page" onclick="vedio(11,0);"><img src="img/cell.png"  alt=""></a><button class="easy">Easy</button><button class="hin">Hindi</button><h6></h6></div>
+                    <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(11,0);"><img src="img/cell.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6></h6></div>  -->
+               </div>  
+            </div>
+           
+            <div id="sb" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Structural Biochemistry</h1>
+                <div class="grid-container">
+                    <!-- <div class="grid-item hin hard"><a href="/EaseYourStudy/video_page" onclick="vedio(11,0);"><img src="img/str.png"  alt=""></a><button class="hard">Hard</button><button class="hin">Hindi</button><h6></h6></div>   -->
+                    <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(21,0);"><img src="/img/icons/str.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6>Shomu's Biology</h6></div>
+                    <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(21,1);"><img src="/img/icons/str.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6>Nanhe Lal Gupta</h6></div>
+                    <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(21,2);"><img src="/img/icons/str.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6>Morgan Kindel</h6></div>
+                    <!-- <div class="grid-item hin hard"><a href="/EaseYourStudy/video_page" onclick="vedio(11,0);"><img src="img/str.png"  alt=""></a><button class="hard">Hard</button><button class="hin">Hindi</button><h6></h6></div>  -->
+               </div>  
+            </div>
+           
+            <div id="bc" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Biological Chemistry</h1>
+                <div class="grid-container">
+                    <div class="grid-item hin easy"><a href="/EaseYourStudy/video_page" onclick="vedio(22,0);"><img src="/img/icons/bioc.png"  alt=""></a><button class="easy">Easy</button><button class="hin">Hindi</button><h6>KCL Tutorial</h6></div>  
+                    <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(22,1);"><img src="/img/icons/bioc.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6>Shomu's Biology</h6></div>
+                    <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(22,2);"><img src="/img/icons/bioc.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6>Nanhe Lal Gupta</h6></div>
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(22,3);"><img src="/img/icons/bioc.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6>MIT</h6></div>
+                    <!-- <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(11,0);"><img src="img/bioc.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6></h6></div>  -->
+               </div>  
+            </div>
+            <div id="m" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Microbiology</h1>
+                <div class="grid-container">
+                    <div class="grid-item hin easy"><a href="/EaseYourStudy/video_page" onclick="vedio(23,0);"><img src="/img/icons/micro.png"  alt=""></a><button class="easy">Easy</button><button class="hin">Hindi</button><h6>KCL Tutorial</h6></div>  
+                    <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(23,1);"><img src="/img/icons/micro.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6>Shomu's Biology</h6></div>
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(23,2);"><img src="/img/icons/micro.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6>Biology Porfessor</h6></div>
+                    <!-- <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(11,0);"><img src="img/micro.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6></h6></div> -->
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(23,3);"><img src="/img/icons/micro.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6>Lecturio Material</h6></div> 
+               </div>  
+            </div>           
+            
+            <div id="ps" style="display:none">
+                <h1  style="padding: 10px; margin: 10px;">Plant Science</h1>
+                <div class="grid-container">
+                    <div class="grid-item eng medium"><a href="/EaseYourStudy/video_page" onclick="vedio(24,0);"><img src="/img/icons/plsc.png"  alt=""></a><button class="medium">Medium</button><button class="eng">English</button><h6>Shomu's Biology</h6></div>  
+                    <div class="grid-item hin easy"><a href="/EaseYourStudy/video_page" onclick="vedio(24,1);"><img src="/img/icons/plsc.png"  alt=""></a><button class="easy">Easy</button><button class="hin">Hindi</button><h6>GAT-B & IIT JAM </h6></div>
+                    <!-- <div class="grid-item eng easy"><a href="/EaseYourStudy/video_page" onclick="vedio(11,0);"><img src="img/plsc.png"  alt=""></a><button class="easy">Easy</button><button class="eng">English</button><h6></h6></div>
+                    <div class="grid-item eng hard"><a href="/EaseYourStudy/video_page" onclick="vedio(11,0);"><img src="img/plsc.png"  alt=""></a><button class="hard">Hard</button><button class="eng">English</button><h6></h6></div> -->
+                    <div class="grid-item hin medium"><a href="/EaseYourStudy/video_page" onclick="vedio(24,2);"><img src="/img/icons/plsc.png"  alt=""></a><button class="medium">Medium</button><button class="hin">Hindi</button><h6>Science and Agriculture Botany</h6></div> 
+               </div>  
+            </div>
+
+                
+        </div>
+        <br>
+    </section>
+    
+    {{>footer}}
+  
+    
+    <script src="https://codegena.com/assets/js/async-iframe.js"></script> 
+</body>
+<script type="text/javascript" src="/js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.7/jquery.lazyload.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ng2-bootstrap/1.6.2/ng2-bootstrap.umd.js"></script>
+<script>
+     $("#dep").css("display","none");
+     $(".row").css("display","block");
+        
+    
+</script>
+</html>

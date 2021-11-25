@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EASE YOUR STUDY | Become an expert</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Varela+Round&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <!-- <title>LOGIN</title> -->
+        <link rel="stylesheet" href="/CSS/style_login_sign_up.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+<body>
+    {{>header}}
+
+    <section class="search">
+        
+            <form action="" class="myform">
+                <input type="text" name="search" id="search" onkeydown = "if (event.keyCode == 13) return searchKey()"/>
+            </form>
+        
+    </section>
+    
+
+    {{>footer}}
+    <div id="overlay">
+            
+        </div>
+        
+        <div id="modal" class="container3">
+
+            <img src="/img/Capture.PNG" width="380px" height="85px">
+            <h3 >Welcome back!</h3>
+            <h4 id="failed_login">{{msg}}</h4>
+            <div class="container-1">
+            <form action='/login' method="post" id="loginForm">
+           
+                <input name="email" type="text" placeholder="Email" id="email">
+            <br>
+            
+                 <input name="password" type="password" placeholder="Password" id="password">
+             
+            <button class="sign-btn btn" id="submitbtn" type="submit">Login</button>
+            </div>
+            </form>
+            <div class="btn1">
+                {{!-- <a href="/EaseYourStudy" class="sign-btn btn"><span>Login</span></a> --}}
+                <h4>Don't have an account?<a href="/signup">Create Account</a></h4>
+            </div>
+            <a class="forgot" href="forgot.html">Forgot Password?</a>
+            
+            
+        </div>
+        {{!-- <script src="/js/login.js"></script> --}}
+    
+    <script>
+        function openModal() {
+        $("#overlay").css({"display":"block"});
+        $("#modal").css({"display":"block"});
+        }
+        openModal();
+        
+        
+    </script>
+    
+    
+</body>
+</html>

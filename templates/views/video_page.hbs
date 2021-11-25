@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EASE YOUR STUDY | Become an expert</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="/CSS/style.css">
+        <link rel="shortcut icon" href="/img/favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Varela+Round&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body onload="load();" style="overflow-x: hidden;"> 
+        
+            <div class="container">
+                    <img class="logo" src="/img/Capture.PNG" alt="image" width="300px" height="60px" style="margin-top: 10px;" srcset="">
+            </div>
+            <div id="NAME"></div>
+            <div id="NAME_SUB" ></div>
+            
+            <div class="container box1">
+                
+                <nav class="flex item-center justify-between">
+                    <div class="left flex items-center"></div>
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <h4 id="user_name">Welcome {{name}}!</h4>
+                        <a href="/EaseYourStudy/profile">Your Profile</a>
+                        <a href="#">Your reviews</a>
+                        <a href="#contact-us">Contact Us</a>
+                        <a href="/logout">Logout</a>
+                        <div class="flex" >
+                            <a href="https://twitter.com/Ease_your_study" ><img src="https://img.icons8.com/ios/30/000000/twitter--v1.png"></a>
+                            <a href="http://www.instagram.com/ease_your_study/"><img src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png"></a>
+                            <a href="https://www.linkedin.com/in/ease-your-study-website-62094b225/"><img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png"></a>
+                    
+        
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div style="font-size:30px;cursor:pointer ;padding-right:40px;" onclick="openNav()"><img src="https://img.icons8.com/ios/50/000000/user-menu-male.png"/></div>                   
+                    </div>
+                
+                </nav>
+            </div>
+                
+
+               
+                <!-- <button class="profile-btn">P</button> -->
+            <div class="sec-two">
+            
+                <div class="part1">
+                    <div class="home">
+
+                    <a href="/EaseYourStudy"><span>HOME</span></a>
+                    </div>
+                    <div class="video-sec">
+                        <iframe id="main" name="PLAYLIST" width="100%" onload="play_func()" src="https://www.youtube.com/embed/?listType=playlist&list="height="560px"frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            
+            <footer id="contact-us" class="footer">
+                <div class="contact">
+                <br>
+                <p class="footer__title">Ease your study</p><br>
+                <p class="highlight" style="background-color: white; margin:0;color: black; padding:20px;margin:0 25%; border-radius:10px;">Let us Know about your querries</p>
+                       
+               </div>      
+            
+                <div class="logos">
+                    
+                    <br>
+                
+                    <a href=""><img src="https://img.icons8.com/office/30/000000/whatsapp--v1.png"> Whatsapp</p></a><br>
+                    <a href="https://twitter.com/Ease_your_study" ><img src="https://img.icons8.com/fluency/30/000000/twitter.png"><p> Twitter</p></a><br>
+                    <a href="http://www.instagram.com/ease_your_study/"><img src="https://img.icons8.com/fluency/30/000000/instagram-new.png"/><p> Instagram </p></a><br>
+                    <a href="https://www.linkedin.com/in/ease-your-study-website-62094b225/"><img src="https://img.icons8.com/color/30/000000/linkedin.png"/><p> LinkedIn </p></a><br>
+                    <a href=""><img src="https://img.icons8.com/fluency/30/000000/gmail-new.png"/><p> Mail Us</p></a><br><br>
+                </div>    
+                
+                <div class="contact">
+                <p>&#169; 2021 copyright all right reserved</p><br>
+               </div>
+                 
+            </footer>
+            <script src="/js/script.js"></script>
+            
+            <script type="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </body>
+</html>
