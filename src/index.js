@@ -13,6 +13,8 @@ const port = process.env.PORT||3000;
 const publicPath = path.join(__dirname,'../public');
 const viewsPath = path.join(__dirname,'../templates/views');
 const partialsPath = path.join(__dirname,'../templates/partials');
+var distDir = __dirname + "/dist/";
+app.use(express.static(distDir));
 
 app.set('view engine','hbs')
 app.set('views',viewsPath)
