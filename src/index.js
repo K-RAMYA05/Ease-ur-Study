@@ -29,9 +29,7 @@ app.use(express.static(publicPath))
 
 app.get('/login',(req,res)=>{
     
-    res.render('index',{
-        msg: req.query.msg
-    })
+    res.redirect('/login');
 })
 app.post('/login',async (req,res)=>{
     
