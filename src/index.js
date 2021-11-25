@@ -1,22 +1,18 @@
-const path = require('path')
-const hbs = require('hbs')
-const express = require('express')
-require('./db/mongoose')
-const User = require('./models/user')
-const cookieParser = require('cookie-parser')
-const jwt = require('jsonwebtoken')
-const auth = require('./middleware/auth')
+const path = require('path');
+const hbs = require('hbs');
+const express = require('express');
+require('./db/mongoose');
+const User = require('./models/user');
+const cookieParser = require('cookie-parser');
+const jwt = require('jsonwebtoken');
+const auth = require('./middleware/auth');
 
 const app = express();
 const port = process.env.PORT||3000;
 
-app.listen(port,()=>{
-    console.log("Server is running")
-})
-const publicPath = path.join(__dirname,'../public')
-const viewsPath = path.join(__dirname,'../templates/views')
-const partialsPath = path.join(__dirname,'../templates/partials')
-
+const publicPath = path.join(__dirname,'../public');
+const viewsPath = path.join(__dirname,'../templates/views');
+const partialsPath = path.join(__dirname,'../templates/partials');
 
 app.set('view engine','hbs')
 app.set('views',viewsPath)
@@ -26,10 +22,13 @@ app.use(cookieParser())
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 app.use(express.static(publicPath))
-
+app.get("*", (req, res) => {
+    res.render('index');
+  });
 app.get('/login',(req,res)=>{
-    
-    res.redirect('/login');
+    res.render('index',{
+        msg: req.query.msg
+    })
 })
 app.post('/login',async (req,res)=>{
     
@@ -128,4 +127,8 @@ app.get('/EaseYourStudy/profile',auth,(req,res)=>{
         name:req.user.name,
         email:req.user.email
     })
+})
+
+app.listen(port,()=>{
+    console.log("Server is running")
 })
