@@ -1,20 +1,19 @@
-const path = require('path');
-const hbs = require('hbs');
-const express = require('express');
-require('./db/mongoose');
-const User = require('./models/user');
-const cookieParser = require('cookie-parser');
-const jwt = require('jsonwebtoken');
-const auth = require('./middleware/auth');
+const path = require('path')
+const hbs = require('hbs')
+const express = require('express')
+require('./db/mongoose')
+const User = require('./models/user')
+const cookieParser = require('cookie-parser')
+const jwt = require('jsonwebtoken')
+const auth = require('./middleware/auth')
 
 const app = express();
 const port = process.env.PORT||3000;
 
-const publicPath = path.join(__dirname,'../public');
-const viewsPath = path.join(__dirname,'../templates/views');
-const partialsPath = path.join(__dirname,'../templates/partials');
-var distDir = __dirname + "/dist/";
-app.use(express.static(distDir));
+const publicPath = path.join(__dirname,'../public')
+const viewsPath = path.join(__dirname,'../templates/views')
+const partialsPath = path.join(__dirname,'../templates/partials')
+
 
 app.set('view engine','hbs')
 app.set('views',viewsPath)
