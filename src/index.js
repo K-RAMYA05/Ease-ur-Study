@@ -9,7 +9,10 @@ const auth = require('./middleware/auth')
 
 const app = express();
 const port = process.env.PORT||3000;
-app.listen(3000);
+
+app.listen(port,()=>{
+    console.log("Server is running")
+})
 const publicPath = path.join(__dirname,'../public')
 const viewsPath = path.join(__dirname,'../templates/views')
 const partialsPath = path.join(__dirname,'../templates/partials')
@@ -127,8 +130,4 @@ app.get('/EaseYourStudy/profile',auth,(req,res)=>{
         name:req.user.name,
         email:req.user.email
     })
-})
-
-app.listen(port,()=>{
-    console.log("Server is running")
 })
