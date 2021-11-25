@@ -25,6 +25,7 @@ app.use(express.urlencoded({extended:false}))
 app.use(express.static(publicPath))
 
 app.get('/login',(req,res)=>{
+    
     res.render('index',{
         msg: req.query.msg
     })
