@@ -50,6 +50,12 @@ const userSchema = new mongoose.Schema(
             required:true,
             
         },
+        img:
+        {
+            data:Buffer,
+            contentType: String,
+            
+        },
         tokens: [{
             token:{
                 type:String,

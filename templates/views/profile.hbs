@@ -52,9 +52,9 @@ img {
     height: auto;
 }
 .p-image {
-  position: absolute;
-  top: 163px;
-  left: 33%;
+  position: relative;
+  top: -36px;
+  left: 16%;
   color:gray;
   transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
   
@@ -88,7 +88,7 @@ img {
              </div>
              <div class="p-image">
               <i class="fa fa-camera upload-button" style="font-size:48px"></i>
-                     <input class="file-upload" type="file"  accept="image/*"/>
+                     <input class="file-upload" type="file"  accept="image/*" src={{img}}/>
              </div>
          </div>
     </div>
@@ -96,17 +96,17 @@ img {
         
 
         Username:<br>
-        <input type="text" name="username" value={{username}}> <button style="font-size:24px"><i class="fa fa-edit"></i></button>
+        <input type="text" name="username" value={{username}} > <button style="font-size:24px"><i class="fa fa-edit"></i></button>
         <br><br>
         Email id:<br>
-        <input type="text" name="email_id" value={{email}}>
+        <input type="text" name="email_id" value={{email}} disabled>
         <br><br>
     
         Select gender:
         <br>
-        <input type="radio" name="gender" id="male">
+        <input type="radio" name="gender" id="male" value={{gender}}>
         <label for="male">Male</label><br>
-        <input type="radio" name="gender" id="female">
+        <input type="radio" name="gender" id="female" value={{gender}}>
         <label for="female">Female</label>
         <br><br>
 

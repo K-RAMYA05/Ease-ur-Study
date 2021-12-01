@@ -9,6 +9,8 @@ const cookieParser = require('cookie-parser');
 const jwt = require('jsonwebtoken');
 const auth = require('./middleware/auth');
 const { localsAsTemplateData } = require('hbs');
+const bodyParser = require("body-parser");
+var multer=require("multer")
 
 
 const app = express();
@@ -157,6 +159,8 @@ app.get('/EaseYourStudy/profile',auth,(req,res)=>{
     res.render('profile',{
         name:req.user.name,
         email:req.user.email,
+        img:req.user.img,
+        department:req.user.deptartment,
         username:req.user.username,
         gender:req.user.gender,
         age:req.user.age,
@@ -171,10 +175,12 @@ app.post('/EaseYourStudy/profile',auth,async(req,res)=>{
          const doc= await User.findOneAndUpdate({_id:userid},{
              $set:{
                  username:req.body.username,
-                 department:req.body.dept,
+                 department:req.body.department,
+                 img:req.body.img,
                  age:req.body.age,
                  gender:req.body.gender,
                  college:req.body.college,
+                 img:req.body.img,
                  email:req.body.email
              }
          })
