@@ -145,76 +145,73 @@ for (let i = 0; i < doc.childNodes.length; i++)
 
 function searchKey()
 { 
+  var x=document.getElementById("search").value.toLowerCase();
 
-if(document.getElementById("search").value.toLowerCase()=="english" || document.getElementById("search").value.toLowerCase()=="eng"  )
+if(x=="english" || x=="eng"  )
 langFunc("english");
-else if(document.getElementById("search").value.toLowerCase()=="hindi" || document.getElementById("search").value.toLowerCase()=="hin"  )
+else if(x=="hindi" || x=="hin"  )
 langFunc("hindi");
-else if(document.getElementById("search").value.toLowerCase()=="easy" )
+else if(x=="easy" )
 diffFunc("easy");
-else if(document.getElementById("search").value.toLowerCase()=="medium")
+else if(x=="medium")
 diffFunc("medium");
-else if(document.getElementById("search").value.toLowerCase()=="hard")
+else if(x=="hard")
 diffFunc("hard");
-else if(document.getElementById("search").value.toLowerCase()=="any")
+else if(x=="any")
 langFunc("any");
-else if(document.getElementById("search").value.toLowerCase()=="data structures")
+else if(x=="data structures")
 funSub(0);
-else if(document.getElementById("search").value.toLowerCase()=="database mangement")
+else if(x=="database mangement")
 funSub(1);
-else if(document.getElementById("search").value.toLowerCase()=="networks"||document.getElementById("search").value.toLowerCase()=="networks and communication")
+else if(x=="networks"||x=="networks and communication")
 funSub(2);
-else if(document.getElementById("search").value.toLowerCase()=="operating systems")
+else if(x=="operating systems")
 funSub(3);
-else if(document.getElementById("search").value.toLowerCase()=="software")
+else if(x=="software")
 funSub(4);
-else if(document.getElementById("search").value.toLowerCase()=="web development")
+else if(x=="web development")
 funSub(5);
-else if(document.getElementById("search").value.toLowerCase()=="digital logic and circuit")
+else if(x=="digital logic and circuit")
 funSub(6);
-else if(document.getElementById("search").value.toLowerCase()=="analog electronics")
+else if(x=="analog electronics")
 funSub(7);
-else if(document.getElementById("search").value.toLowerCase()=="signal & system")
+else if(x=="signal & system")
 funSub(8);
-else if(document.getElementById("search").value.toLowerCase()=="electromagnetic theory")
+else if(x=="electromagnetic theory")
 funSub(9);
-else if(document.getElementById("search").value.toLowerCase()=="analog and digital communications")
+else if(x=="analog and digital communications")
 funSub(10);
-else if(document.getElementById("search").value.toLowerCase()=="integrated electronics")
+else if(x=="integrated electronics")
 funSub(11);
-else if(document.getElementById("search").value.toLowerCase()=="mechanical drawing")
+else if(x=="mechanical drawing")
 funSub(12);
-else if(document.getElementById("search").value.toLowerCase()=="basic thermodynamics")
+else if(x=="basic thermodynamics")
 funSub(13);
-else if(document.getElementById("search").value.toLowerCase()=="mechanics of solids or solid Mechanics")
+else if(x=="mechanics of solids or solid Mechanics")
 funSub(14);
-else if(document.getElementById("search").value.toLowerCase()=="electromagnetic theory")
+else if(x=="electromagnetic theory")
 funSub(15);
-else if(document.getElementById("search").value.toLowerCase()=="heat transfer")
+else if(x=="heat transfer")
 funSub(16);
-else if(document.getElementById("search").value.toLowerCase()=="fluid mechanics")
+else if(x=="fluid mechanics")
 funSub(17);
-else if(document.getElementById("search").value.toLowerCase()=="human biology")
+else if(x=="human biology")
 funSub(18);
-else if(document.getElementById("search").value.toLowerCase()=="cell biology and biological systems")
+else if(x=="cell biology and biological systems")
 funSub(19);
-else if(document.getElementById("search").value.toLowerCase()=="structural biochemistry")
+else if(x=="structural biochemistry")
 funSub(20);
-else if(document.getElementById("search").value.toLowerCase()=="biological chemistry")
+else if(x=="biological chemistry")
 funSub(21);
-else if(document.getElementById("search").value.toLowerCase()=="microbiology")
+else if(x=="microbiology")
 funSub(22);
-else if(document.getElementById("search").value.toLowerCase()=="plant science")
+else if(x=="plant science")
 funSub(23);
-else{
-  var x=document.getElementById("search").value;
-  var id;
-  if(x=="Computer Science"||x=="cse") {id="0";func(id);}
-  else if(x=="Electronics"||x=="ECE") {id="1";func(id);}
-  else if(x=="Mechanical"||x=="MECH") {id="2";func(id);}
-  else if(x=="Civil") {id="3";func(id);}
-  else if(x=="BIO"||x=="Bio - Technology"){id="4";func(id);}
-  }
+else if(x=="computer science"||x=="cse") {id="0";func(id);}
+else if(x=="electronics"||x=="ece") {id="1";func(id);}
+else if(x=="mechanical"||x=="mech") {id="2";func(id);}
+else if(x=="bio"||x=="bio - technology"){id="3";func(id);}
+  
   return false;  
 }
 
