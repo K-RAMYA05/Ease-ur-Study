@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            top: 40%;
+            
+        }
+        input,label{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+         <form action="/reset_password" method="post">
+             <label for="email">Email</label>
+             <input type="email" name="email" id="mail"><br>
+             <label for="new_pass">New password</label>
+             <input type="text" name="new_pass"><br>
+             <label for="confirm_pass">Confirm Password</label>
+             <input type="text" name="confirm_pass"><br>
+             <label for="request_OTP" >Request OTP</label>
+             <button name="request_OTP" onclick="req_OTP()">Request OTP</button>
+             <label for="otp">Enter OTP</label>
+             <input type="text" name="OTP"><br>
+             <input type="submit" value="submit">
+         </form>
+    </div>
+    <script>
+function req_OTP() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  }
+  var mail = document.getElementById("mail").value
+  xhttp.open("GET", "/request_OTP?mail="+mail);
+  xhttp.send();
+}
+</script>
+</body>
+</html>
