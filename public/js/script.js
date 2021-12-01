@@ -145,6 +145,22 @@ for (let i = 0; i < doc.childNodes.length; i++)
 
 function searchKey()
 { 
+  var y=document.getElementsByClassName("grid-container");     
+  for (i = 0; i < y.length; i++) 
+  {   
+      for(j=0;j<y[i].childNodes.length;j++)
+      {
+        if (y[i].childNodes[j].className == "grid-item eng easy" ||y[i].childNodes[j].className == "grid-item eng medium"||y[i].childNodes[j].className == "grid-item eng hard"   
+        ||y[i].childNodes[j].className == "grid-item hin easy"||y[i].childNodes[j].className == "grid-item hin medium"||y[i].childNodes[j].className == "grid-item hin hard"  )
+        {
+          temp=y[i].childNodes[j].childNodes;
+          for(k=0;k<temp.length;k++)
+              y[i].childNodes[j].style.display="block";    
+        }       
+    
+      }
+    }
+   
   var x=document.getElementById("search").value.toLowerCase();
 
 if(x=="english" || x=="eng"  )
@@ -211,7 +227,48 @@ else if(x=="computer science"||x=="cse") {id="0";func(id);}
 else if(x=="electronics"||x=="ece") {id="1";func(id);}
 else if(x=="mechanical"||x=="mech") {id="2";func(id);}
 else if(x=="bio"||x=="bio - technology"){id="3";func(id);}
+else{  
   
+
+  for (let i = 0; i < subjects.length; i++) 
+    document.getElementById(subjects[i]).style.display="block";   
+  var y=document.getElementsByClassName("grid-container");     
+  
+  for (i = 0; i < y.length; i++)
+  {   var f=0;
+    
+    for(j=0;j<y[i].childNodes.length;j++)
+    {
+      if (y[i].childNodes[j].className == "grid-item eng easy" ||y[i].childNodes[j].className == "grid-item eng medium"||y[i].childNodes[j].className == "grid-item eng hard"   
+      ||y[i].childNodes[j].className == "grid-item hin easy"||y[i].childNodes[j].className == "grid-item hin medium"||y[i].childNodes[j].className == "grid-item hin hard"  )
+      {
+        temp=y[i].childNodes[j].childNodes;
+        for(k=3;k<temp.length;k=k+4)
+        {
+          if(temp[k].innerHTML.toLowerCase()!=x)
+          {
+            y[i].childNodes[j].style.display="none";
+
+          }
+          else f++;
+          
+        }
+      
+
+      }
+       
+    
+    }
+    if(f==0)
+    {
+      y[i].previousElementSibling.style.display="none";
+      
+    }
+
+  }
+ 
+}
+
   return false;  
 }
 
