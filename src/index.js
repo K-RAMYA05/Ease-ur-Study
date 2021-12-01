@@ -55,7 +55,7 @@ app.post('/login',async (req,res)=>{
             secure: process.env.NODE_ENV === "production",
           })
           
-        res.redirect(302,'/EaseYourStudy') //token).status(200).redirect('/EaseYourStudy')
+        res.redirect('/EaseYourStudy') //token).status(200).redirect('/EaseYourStudy')
         
     }catch(e){
         res.status(404).send(e)
