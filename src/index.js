@@ -86,8 +86,8 @@ app.post('/signup',async (req,res)=>{
     temp_user=userData
     rand=Math.floor((Math.random() * 100) + 54)
     
-    host = req.hostname
-    link="http://"+host+"/verify?id="+rand
+    
+    link="https://ease-your-study-1.herokuapp.com/verify?id="+rand
 
     const sendgridAPIkey = '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'
 
