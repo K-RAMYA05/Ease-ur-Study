@@ -158,6 +158,54 @@ else if(document.getElementById("search").value.toLowerCase()=="hard")
 diffFunc("hard");
 else if(document.getElementById("search").value.toLowerCase()=="any")
 langFunc("any");
+else if(document.getElementById("search").value.toLowerCase()=="data structures")
+funSub(0);
+else if(document.getElementById("search").value.toLowerCase()=="database mangement")
+funSub(1);
+else if(document.getElementById("search").value.toLowerCase()=="networks"||document.getElementById("search").value.toLowerCase()=="networks and communication")
+funSub(2);
+else if(document.getElementById("search").value.toLowerCase()=="operating systems")
+funSub(3);
+else if(document.getElementById("search").value.toLowerCase()=="software")
+funSub(4);
+else if(document.getElementById("search").value.toLowerCase()=="web development")
+funSub(5);
+else if(document.getElementById("search").value.toLowerCase()=="digital logic and circuit")
+funSub(6);
+else if(document.getElementById("search").value.toLowerCase()=="analog electronics")
+funSub(7);
+else if(document.getElementById("search").value.toLowerCase()=="signal & system")
+funSub(8);
+else if(document.getElementById("search").value.toLowerCase()=="electromagnetic theory")
+funSub(9);
+else if(document.getElementById("search").value.toLowerCase()=="analog and digital communications")
+funSub(10);
+else if(document.getElementById("search").value.toLowerCase()=="integrated electronics")
+funSub(11);
+else if(document.getElementById("search").value.toLowerCase()=="mechanical drawing")
+funSub(12);
+else if(document.getElementById("search").value.toLowerCase()=="basic thermodynamics")
+funSub(13);
+else if(document.getElementById("search").value.toLowerCase()=="mechanics of solids or solid Mechanics")
+funSub(14);
+else if(document.getElementById("search").value.toLowerCase()=="electromagnetic theory")
+funSub(15);
+else if(document.getElementById("search").value.toLowerCase()=="heat transfer")
+funSub(16);
+else if(document.getElementById("search").value.toLowerCase()=="fluid mechanics")
+funSub(17);
+else if(document.getElementById("search").value.toLowerCase()=="human biology")
+funSub(18);
+else if(document.getElementById("search").value.toLowerCase()=="cell biology and biological systems")
+funSub(19);
+else if(document.getElementById("search").value.toLowerCase()=="structural biochemistry")
+funSub(20);
+else if(document.getElementById("search").value.toLowerCase()=="biological chemistry")
+funSub(21);
+else if(document.getElementById("search").value.toLowerCase()=="microbiology")
+funSub(22);
+else if(document.getElementById("search").value.toLowerCase()=="plant science")
+funSub(23);
 else{
   var x=document.getElementById("search").value;
   var id;
