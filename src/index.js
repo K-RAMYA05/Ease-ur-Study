@@ -192,6 +192,54 @@ app.post('/EaseYourStudy/profile',auth,async(req,res)=>{
          res.redirect('/EaseYourStudy/profile?msg=Failed to update your profile!')
      }
 })
+app.post('/EaseYourStudy/reviews',auth,async function(req,res) {
+    const user_id = req.user._id
+    try{
+        const user= await User.findById(user_id)
+        for(let i=0;i<req.body.length;i++){
+            let review= req.body[i]
+            user.reviews = user.reviews.concat({review})
+        }
+        await user.save()
+        const sendgridAPIkey = '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'
+
+        sgMail.setApiKey(sendgridAPIkey)
+
+        await sgMail.send({
+            to: user.email,
+            from: 'ak656634@gmail.com',
+            subject: 'EaseYourStudy- Your reviews got submitted',
+            html:"<h2>Thank you for your reviews</h2><br><h3>It will help us in improving and serving better.</h3>"
+        })
+    }catch(e){
+       res.send("Error in saving your reviews",e)
+    }
+    
+  });
+
+  app.post('/EaseYourStudy/queries',auth,async (req,res)=>{
+    const user_id = req.user._id
+    
+    const subject = req.body.subject
+    const query = req.body.query
+    try{
+        const user= await User.findById(user_id)
+        user.queries = user.queries.concat({subject,query})
+        await user.save()
+        const sendgridAPIkey = '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'
+
+        sgMail.setApiKey(sendgridAPIkey)
+
+        await sgMail.send({
+            to: user.email,
+            from: 'ak656634@gmail.com',
+            subject: 'EaseYourStudy- Subject related queries',
+            html:"<h3>We have recieved your queries. Your queries will be answered shortly. Till then continue learning.</h3>"
+        })
+    }catch(e){
+       res.send("Error in saving your queries",e)
+    }
+} )
 
 app.get('/reset_password',(req,res)=>{
     res.render('forgot_pass')

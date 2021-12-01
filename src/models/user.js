@@ -50,16 +50,24 @@ const userSchema = new mongoose.Schema(
             required:true,
             
         },
-        img:
-        {
-            data:Buffer,
-            contentType: String,
-            
-        },
+        
         tokens: [{
             token:{
                 type:String,
                 required:true
+            }
+        }],
+        reviews: [{
+            review:{
+                type:String
+            }
+        }],
+        queries: [{
+            subject:{
+                type:String
+            },
+            query:{
+                type:String
             }
         }]
     
