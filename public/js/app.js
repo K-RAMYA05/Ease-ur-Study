@@ -13,6 +13,7 @@ let editId = "";
 window.addEventListener("DOMContentLoaded",setupItems);
 form.addEventListener("submit",addItem);
 
+
 function addItem(e){
     e.preventDefault();
     const value = textOne.value;
@@ -122,4 +123,25 @@ deleteBtn.addEventListener('click',deleteItem);
 editBtn.addEventListener('click',editItem);
     //append child
     list.appendChild(ele);
+}
+function getAllReviews(){
+    var x = document.querySelectorAll("[class='title']");
+    var data1=[];
+    for (var i=0;i<x.length;i++) {
+       data1.push(x[i].textContent);   
+    }
+    console.log(data1);
+    var data_json = JSON.stringify(data1);
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST","https://ease-your-study-1.herokuapp.com/EaseYourStudy/reviews",true);
+    xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
+    xhr.onload = function () {
+       var data = JSON.parse(xhr.responseText);
+       if (xhr.readyState == 4 && xhr.status == "201") {
+           console.log(data);
+        } else {
+        console.log(data);
+  }
+}
+xhr.send(data_json);
 }

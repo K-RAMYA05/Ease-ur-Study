@@ -14,7 +14,23 @@ function openLeftNav() {
 function closeLeftNav() {
   document.getElementById("leftSidenav").style.width = "0";
 }
-
+function submitQuery(){
+  var sub = document.getElementById('sname').value;
+  var queries = document.getElementById('quer').value;
+  var data_query = {'subject':sub,'query':queries};
+  var data_json = JSON.stringify(data_query);
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST","https://ease-your-study-1.herokuapp.com/EaseYourStudy/queries",true);
+  xhr.setRequestHeader('Content-Type','application/json; charset=utf-8');
+  xhr.onload= function(){
+      var data = JSON.parse(xhr.responseText);
+      if(xhr.readyState== 4 && xhr.status== "201"){
+          console.log(data);
+      }
+      console.log(data);
+  }
+  xhr.send(data_json);
+}
 
 const subjects=["ds","dm","nc","os","soft","wd","dl","ae","ss","et","ad","ie","md","bd","mssm",
 "emt","ht","fm","hb","cbbs","sb","bc","m","ps"]; 
