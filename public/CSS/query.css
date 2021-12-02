@@ -1,40 +1,45 @@
-.query_container{
+.query_container{   
     
-   
-    margin: 20px;
     font-size: 18px;
-    margin-top: 20px;
 }
 #query_head{
+    color:#3f37c9;
     text-align: center;
     
 }
 #mesg{
     text-align: center;
-    margin-bottom: 30px;
+    color:#ff006e;
+
 }
 #sname{
-   width:400px;
-   height:40px;
-   margin-bottom: 20px;
+
    
-   
+   margin:20px 50%;
+   width: 50%;
+   padding: 10px 8px;
+   transform: translateX(-50%);
+
    border: 3px solid black;
    font-size: 18px;
-   margin-left: 28%;
+
    align-self: center;
 }
 #quer{
-    width:800px;
-    height:100px;
-    margin-bottom: 20px;
+    margin:20px 50%;
+    padding: 10px 8px;
+    width: 50%;
+    height: 200px;
+    transform: translateX(-50%);
     
     border: 3px solid black;
     font-size: 18px;
-    margin-left: 10%;
+    
 }
 #sub-queries{
+    margin:20px 50%;
+    transform: translateX(-50%);
     font-size:18px;
     border: 3px solid black;
-    margin-left: 35%;
+
 }

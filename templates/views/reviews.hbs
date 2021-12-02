@@ -23,18 +23,12 @@
             <p style="color: #ff006e;">If any of the channel's material you find best apart from the ones available please add the course name along with channels name . Thankyou!!</p>
          <br>   
          <div class="dept-name">
-            <label for="dname">Department : </label>
-            <select name="dname" id="dname">
-                <option value="Computer Science">Computer Science</option>
-                <option value="Electronics">Electronics</option>
-                <option value="Mechanical">Mechanical</option>
-                <option value="Bio Technology">Bio Technology</option>
-            </select>
+            <label>Please Add your department and reviews</label>
             <br><br>
         </div>
             <div id="text-bar">
-            <input id="text1" type="text" placeholder="Course name-channel's name">
-            <button style="margin-left:10px;" id="submit">ADD</button>
+            <input id="text1" type="text" placeholder="Course Departement and respective name-channel's name">
+            <a><button style="margin-left:10px;cursor:pointer" id="submit">ADD</button></a>
             <h3 id="acknow" style="color: darkgreen; text-align:center"></h3>
             </div>
         </form>
@@ -53,7 +47,8 @@
                         </div>
                     </article>-->
                 </div>
-                <button style="margin-bottom: 20px;" class="submit1" onclick="getAllReviews()">SUBMIT</button>           
+                <a><button style="margin-bottom: 20px;cursor:pointer" class="submit1" onclick="getAllReviews()">SUBMIT</button></a>   
+                        
             </div>
         {{>footer}}
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

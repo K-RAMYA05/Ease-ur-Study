@@ -211,9 +211,14 @@ app.post('/EaseYourStudy/reviews',auth,async function(req,res) {
             subject: 'EaseYourStudy- Your reviews got submitted',
             html:"<h2>Thank you for your reviews</h2><br><h3>It will help us in improving and serving better.</h3>"
         })
+        if(doc){
+             
+            res.redirect('/EaseYourStudy/reviews?msg=Your reviews has been sent successfully!')
+        }
     }catch(e){
        res.send("Error in saving your reviews",e)
     }
+   
     
   });
 
@@ -238,6 +243,10 @@ app.post('/EaseYourStudy/reviews',auth,async function(req,res) {
         })
     }catch(e){
        res.send("Error in saving your queries",e)
+    }
+    if(doc){
+             
+        res.redirect('/EaseYourStudy/queries?msg=Your queries has been sent successfully!')
     }
 } )
 
