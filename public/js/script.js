@@ -117,6 +117,7 @@ for (let i = 0; i < doc.childNodes.length; i++)
 
 function diffFunc(id){
 let i=0;
+if(template==-1)alert("Please select your subject first !!");
 
 for (i = 0; i < subjects.length; i++) {
   if(document.getElementById(subjects[i]).style.display=="block")    
