@@ -19,7 +19,7 @@ function submitQuery(){
   var queries = document.getElementById('quer').value;
   var data_query = {'subject':sub,'query':queries};
   var data_json = JSON.stringify(data_query);
-  document.getElementById("acknow").innerHTML="Queries Submited";
+  document.getElementById("acknow").innerHTML="Queries Submitted";
   var xhr = new XMLHttpRequest();
   xhr.open("POST","https://ease-your-study-1.herokuapp.com/EaseYourStudy/queries",true);
   xhr.setRequestHeader('Content-Type','application/json; charset=utf-8');

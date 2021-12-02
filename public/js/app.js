@@ -130,7 +130,7 @@ function getAllReviews(){
     for (var i=0;i<x.length;i++) {
        data1.push(x[i].textContent);   
     }
-    document.getElementById("acknow").innerHTML="Review Submited";
+    document.getElementById("acknow").innerHTML="Review Submitted";
         
     console.log(data1);
     var data_json = JSON.stringify(data1);
