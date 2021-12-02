@@ -245,6 +245,7 @@ else if(x=="computer science"||x=="cse") {id="0";func(id);}
 else if(x=="electronics"||x=="ece") {id="1";func(id);}
 else if(x=="mechanical"||x=="mech") {id="2";func(id);}
 else if(x=="bio"||x=="bio - technology"){id="3";func(id);}
+else if(x=="clear"||x==""){location.reload();}
 else{  
   
 
@@ -280,6 +281,7 @@ else{
     if(f==0)
     {
       y[i].previousElementSibling.style.display="none";
+      y[i].style.display="none";
       
     }
 
