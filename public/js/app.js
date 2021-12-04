@@ -135,7 +135,7 @@ function getAllReviews(){
     console.log(data1);
     var data_json = JSON.stringify(data1);
     var xhr = new XMLHttpRequest();
-    xhr.open("POST","https://ease-your-study-1.herokuapp.com/EaseYourStudy/reviews",true);
+    xhr.open("POST","https://ease-your-study.herokuapp.com/EaseYourStudy/reviews",true);
     xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
     xhr.onload = function () {
     

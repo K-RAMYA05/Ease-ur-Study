@@ -21,7 +21,7 @@ function submitQuery(){
   var data_json = JSON.stringify(data_query);
   document.getElementById("acknow").innerHTML="Queries Submitted";
   var xhr = new XMLHttpRequest();
-  xhr.open("POST","https://ease-your-study-1.herokuapp.com/EaseYourStudy/queries",true);
+  xhr.open("POST","https://ease-your-study.herokuapp.com/EaseYourStudy/queries",true);
   xhr.setRequestHeader('Content-Type','application/json; charset=utf-8');
   xhr.onload= function(){
       var data = JSON.parse(xhr.responseText);
