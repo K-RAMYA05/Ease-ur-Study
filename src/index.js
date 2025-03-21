@@ -97,7 +97,7 @@ app.post('/signup',async (req,res)=>{
 
     await sgMail.send({
         to: temp_user.email,
-        from: 'ak656634@gmail.com',
+        from: 'kramya.rk01@gmail.com',
         subject: 'Verify your email for EaseYourStudy',
         html:"Hello,<br> Please Click on the link to verify your email.<br><a href="+link+">Click here to verify</a>"
     })
