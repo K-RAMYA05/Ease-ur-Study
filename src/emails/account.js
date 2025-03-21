@@ -9,7 +9,7 @@ sgMail.setApiKey(sendgridAPIkey)
 const req_OTP = (reciever,OTP)=>{
     sgMail.send({
         to: reciever,
-        from: 'ak656634@gmail.com',
+        from: 'kramya.rk01@gmail.com',
         subject: 'OTP-Reset your password',
         html: "<h2>The OTP is "+OTP+"<h2>"
     })
